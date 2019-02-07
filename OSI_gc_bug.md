@@ -26,7 +26,7 @@ BASIC.
 
 -----------------------------------------------------------
 
-__Listing 1__/
+__Listing 1__\
 Demonstrates garbage collection bug in OSI/UK101 ROM BASIC.
 ~~~
  10 DIM A$(3)

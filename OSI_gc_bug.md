@@ -34,7 +34,7 @@ Demonstrates garbage collection bug in OSI/UK101 ROM BASIC.
  PRINT FRE(0)  (machine hangs)
 ~~~
 
-<u>Listing 2</u>
+__Listing 2__\
 String corruption occurs with an unmodified ROM BASIC or
 the original garbage collection patch.  Before entering
 the program, perform a Cold start and enter 1000 for the
@@ -47,10 +47,9 @@ memory size.
  40 GOTO 10
 ~~~
 
-[Listing 3]
-
+__Listing 3__\
 Original garbage collection patch
-
+~~~
  B147   LDX     $85
         LDA     $86
  B14B   STX     $81
@@ -190,12 +189,11 @@ Original garbage collection patch
         JMP     $B14B
 
         .BYTE   $53,$54,$49,$42,$4F ; RUBBISH
+~~~
 
-
-[Listing 4]
-
+__Listing 4__\
 New garbage collection patch
-
+~~~
     1                  ; NEW GARBAGE COLLECTION FIX FOR
     2                  ; OSI/UK101 ROM BASIC  4-Oct-2001
     3
@@ -345,3 +343,6 @@ New garbage collection patch
   147  B24B  FF FF             .BYTE   $FF,$FF
   148
   149  B24D                    .END
+~~~
+
+<i>Original sourece unknown.</i>

@@ -26,28 +26,26 @@ BASIC.
 
 -----------------------------------------------------------
 
-[Listing 1]
-
+<u>Listing 1</u>
 Demonstrates garbage collection bug in OSI/UK101 ROM BASIC.
-
+~~~
  10 DIM A$(3)
  RUN
  PRINT FRE(0)  (machine hangs)
+~~~
 
-
-[Listing 2]
-
+<u>Listing 2</u>
 String corruption occurs with an unmodified ROM BASIC or
 the original garbage collection patch.  Before entering
 the program, perform a Cold start and enter 1000 for the
 memory size.
-
+~~~
   5 A$="+"
  10 A$="-"+A$+"-"
  20 A$="+"+A$+"+"
  30 PRINT A$
  40 GOTO 10
-
+~~~
 
 [Listing 3]
 
